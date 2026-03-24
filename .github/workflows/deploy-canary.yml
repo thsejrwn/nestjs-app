@@ -2,12 +2,6 @@ name: Build and Deploy
 on:
   push:
     branches: [main]
-  workflow_dispatch:        # ← 수동 실행 추가
-    inputs:
-      reason:
-        description: '배포 사유'
-        required: false
-        default: 'manual canary deploy'
 
 jobs:
   build:
